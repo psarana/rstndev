@@ -1,0 +1,18 @@
+Package: rstndev
+Type: Package
+Title: Calculate Standard Error
+Version: 0.0.0.9000
+Authors@R: person(“Parveen”, “Sarana”, role=c("aut", "cre"),
+  email = “parveenkaursarana@gmail.com”)
+Description: Calculating standard error by hand can be difficult. If for some reason you would like a whole separate package for this function, this package will take in a number and return the standard deviation of that number.
+Depends: 
+	R (>= 3.3.1)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: TRUE
+RoxygenNote: 5.0.1
+Suggests: testthat,
+    knitr,
+    rmarkdown
+Imports: dplyr
+VignetteBuilder: knitr
