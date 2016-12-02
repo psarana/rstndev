@@ -14,8 +14,14 @@ devtools::install_github("psarana/rstndev")
 
 Use:
 
+Included in this package are:
+- standard_deviation() : calculate the standard deviation of a group of values
+- standard_error() : calculate the standard error of a group of values
+
 ```
 x = c(1,2,3,4)
 
 standard_deviation(x)
+
+standard_error(x)
 ```
