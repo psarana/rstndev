@@ -10,12 +10,12 @@ standard_deviation(x)
 \item{x}{as a list}
 }
 \value{
-integer
+numerical
 }
 \description{
-Returns the standard deviation of given number.
+Returns the standard deviation of some given values
 }
 \examples{
-#' standard_deviation(25)
+#' standard_deviation(c(1,2,3,4))
 }
 

@@ -1,13 +1,13 @@
 #' Calculate Standard Deviation
 #'
-#' Returns the standard deviation of given number.
+#' Returns the standard deviation of some given values
 #'
 #' @param x as a list
 #'
-#' @return integer
+#' @return numerical
 #' @export
 #' @examples
-#' #' standard_deviation(25)
+#' #' standard_deviation(c(1,2,3,4))
 
 
 standard_deviation <- function(x) {
@@ -17,3 +17,24 @@ standard_deviation <- function(x) {
   stddev = sqrt(ssq/n)
   return(stddev)
 }
+
+
+#' Calculate Standard Error
+#'
+#' Returns the standard error of some given values
+#'
+#' @param x as a list
+#'
+#' @return numerical
+#' @export
+#' @examples
+#' #' standard_error(c(1,2,3,4))
+
+
+standard_error <- function(x){ 
+  sterror <- standard_deviation(x)/sqrt(length(x))
+  return(sterror)
+}
+  
+
+  

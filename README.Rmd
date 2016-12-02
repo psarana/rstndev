@@ -1,9 +1,8 @@
 ---
 output: github_document
-author: Parveen Sarana
+author: Parveen Sarana , Subi Zhang
 ---
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
 
 ```{r, echo = FALSE}
 knitr::opts_chunk$set(
@@ -12,11 +11,23 @@ knitr::opts_chunk$set(
   fig.path = "README-"
 )
 ```
-Calculating standard error by hand can be difficult. If for some reason you would like a whole separate package for this function, this package will take in a number and return the standard deviation of that number.
+Calculating standard deviation and standard error by hand can be difficult. If for some reasons you would like a whole separate package for these functions, this package will take in some numbers and return the standard deviation and standard error of these numbers.
 
-### Useage:
+### Usage:
 
-Once you have installed this package
+
+Install this package in RStudio:
+
+```
+devtools::install_github("psarana/rstndev")
+```
+
+Use:
+
+```
+x = c(1,2,3,4)
 
 standard_deviation(x)
+```
+
 
