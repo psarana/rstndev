@@ -5,6 +5,16 @@ Calculating standard error by hand can be difficult. If for some reason you woul
 
 ### Useage:
 
-Once you have installed this package
+Install this package in RStudio:
 
-standard\_deviation(x)
+```
+devtools::install_github("psarana/rstndev")
+```
+
+Use:
+
+```
+x = c(1,2,3,4)
+
+standard_deviation(x)
+```
