@@ -7,10 +7,16 @@ test_that("standard_deviation calculates standard deviation", {
   d <- c(1, 1, 3, 3)
   e <- c(-1, -1, -3, -3)
   
-  expect_identical(standard_error(a), 0)
-  expect_identical(standard_error(b), 0)
-  expect_identical(standard_error(c), 0)
-  expect_identical(standard_error(d), 0.5)
-  expect_identical(standard_error(e), 0.5)
+  expect_equal(standard_error(a), 0)
+  expect_equal(standard_error(b), 0)
+  expect_equal(standard_error(c), 0)
+  expect_equal(standard_error(d), 0.5)
+  expect_equal(standard_error(e), 0.5)
+
+})
+
+test_that("standard_error calculates standard error", {
+  
+  expect_equal(standard_error(1), 0)
 
 })
