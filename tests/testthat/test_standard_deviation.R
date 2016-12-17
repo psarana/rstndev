@@ -1,6 +1,10 @@
-context("Calcuating Standard Deviation")
+#standard deviation
 
-test_that("standard_deviation calculates standard deviation", {
+context("Testing Standard Deviation")
+
+test_that("standard_deviation() calculates standard deviation correctly", {
+  
+  #expected outputs
   a <- c(1, 1)
   b <- c(0, 0, 0)
   c <- c(0.5, 0.5)
@@ -12,11 +16,14 @@ test_that("standard_deviation calculates standard deviation", {
   expect_equal(standard_error(c), 0)
   expect_equal(standard_error(d), 0.5)
   expect_equal(standard_error(e), 0.5)
-
-})
-
-test_that("standard_error calculates standard error", {
   
-  expect_equal(standard_error(1), 0)
-
+  #expected errors
+  expect_error(standard_deviation(c()), "Word")
+  expect_error(standard_deviation(c("a", "b", "c")), "type")
+  expect_error(standard_deviation("a"), "type")
+  
+  #if empty
+  expect_equal(standard_deviation(c()),NaN)
+              
 })
+
