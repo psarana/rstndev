@@ -11,6 +11,12 @@
 
 
 standard_deviation <- function(x) {
+  if(is.null(x)){
+    stop("Error: Zero division")
+  }
+  if(!is.vector(x)){
+    stop("Error: Needs to be a vector")
+  }
   n <- length(x)
   mean = sum(x) / n
   ssq <- sum((x-mean)^2)
@@ -31,10 +37,9 @@ standard_deviation <- function(x) {
 #' #' standard_error(c(1,2,3,4))
 
 
-standard_error <- function(x){ 
+standard_error <- function(x){
   sterror <- standard_deviation(x)/sqrt(length(x))
   return(sterror)
 }
-  
 
-  
+
