@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/psarana/rstndev-.svg?branch=master)](https://travis-ci.org/psarana/rstndev-)
+[![Build Status](https://travis-ci.org/psarana/rstndev.svg?branch=master)](https://travis-ci.org/psarana/rstndev)
 
 Parveen Sarana
 
