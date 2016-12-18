@@ -1,4 +1,4 @@
 library(testthat)
 library(rstndev)
 
-test_check("rstndev")
+testthat::test_check("rstndev")
