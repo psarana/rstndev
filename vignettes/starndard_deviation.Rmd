@@ -18,7 +18,7 @@ This package contains functions for statistical calculations. More specifically,
 
 ```{r}
 
-library(sdnada)
+library(rstndev)
 
 ```
 
